@@ -1,0 +1,116 @@
+*{margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  body{
+    background: #010101; /* setting background colour*/
+    background-color: rgb(30, 32, 32);
+    color: #fff;
+}
+.container{
+  display: flex; /*to get contain side by side*/
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  padding: 30px 5%;
+  height: 100vh;
+}
+img{
+  width: 45%;
+  height: 100%;
+  object-fit: cover;
+}
+.aboutme{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  height: 100%;
+}
+.tab-titles{
+  display: flex;
+  margin: 20px 0 40px;
+}
+.tab-links{
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after{
+  content: ' ' ;
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+
+}
+.tab-content ul li{
+  list-style: none;
+  margin: 10px 0;
+
+}
+.tab-content ul li span{
+  color: #79d70c;
+  font-size: 14px;
+
+}
+.Edu-table{
+  border:1px solid rgb(238, 155, 13);
+}
+@media (max-width: 991px)
+{
+    section
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #fff38e;
+    }
+
+    section::before
+    {
+        display: none;
+    }
+
+    .container
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .container .contactForm
+    {
+        width: 100%;
+        height: auto;
+        border-radius: 0px;
+    }
+
+    .container .contactInfo
+    {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        border-radius: 0px;
+    }
+    .container .contactInfo ul.sci
+    {
+       position: relative;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+}
+
+/* footer {
+  text-align: center;
+  margin-top: 50px;
+} */
